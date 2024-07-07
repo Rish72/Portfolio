@@ -11,7 +11,7 @@ const Span = styled.span`
 
 function NavBar() {
   return (
-    <nav className="absolute h-12 w-[95%] bg-slate-100 flex justify-between items-center px-4 box-border rounded-xl border border-gray-400">
+    <nav className="absolute z-10 top-5 h-12 w-[95%] bg-white flex justify-between items-center px-4 box-border rounded-xl border border-gray-400">
       <div>
         <H4 className="">
           rishabh<Span>.</Span>
@@ -22,6 +22,8 @@ function NavBar() {
         <li className="font-bold">HOME</li>
         <li>/</li>
         <li>ABOUT</li>
+        <li>/</li>
+        <li>SKILLS</li>
         <li>/</li>
         <li>PROJECTS</li>
         <li>/</li>
