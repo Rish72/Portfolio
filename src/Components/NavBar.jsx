@@ -9,9 +9,11 @@ const Span = styled.span`
   font-size : 20px;
 `;
 
+const Nav = ["HOME",'/', "ABOUT", '/',"SKILLS",'/', "PROJECTS", "/", "CONTACT"]
+
 function NavBar() {
   return (
-    <nav className="absolute z-10 top-5 h-12 w-[95%] bg-white flex justify-between items-center px-4 box-border rounded-xl border border-gray-400">
+    <nav className="fixed z-20 top-5 h-12 w-[95%] bg-white flex justify-between items-center px-4 box-border rounded-xl border border-gray-400">
       <div>
         <H4 className="">
           rishabh<Span>.</Span>
@@ -19,15 +21,12 @@ function NavBar() {
       </div>
 
       <ul className="flex justify-between text-xs gap-6">
-        <li className="font-bold">HOME</li>
-        <li>/</li>
-        <li>ABOUT</li>
-        <li>/</li>
-        <li>SKILLS</li>
-        <li>/</li>
-        <li>PROJECTS</li>
-        <li>/</li>
-        <li>CONTACT</li>
+        {
+          Nav.map((item) => (
+            <li className="ṭ"><a href="#+${item}"></a>{item}</li>
+          ))
+        }
+      
       </ul>
       <div>
         <button
