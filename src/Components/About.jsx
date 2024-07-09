@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import arrow from "../images/image.png";
+
 
 const H1 = styled.h1`
   font-family: "Anton", sans-serif;
@@ -19,7 +21,7 @@ function About() {
         </H1>
       </div>
       <div className="text-slate-300 flex justify-center items-center" >
-        <img className="rotate-[-45deg]"  width={250} src="src/images/image.png" alt="" />
+        <img className="rotate-[-45deg]"  width={250} src={arrow} alt="" />
         <p className="text-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti
           consectetur quia temporibus, quibusdam accusantium labore voluptas

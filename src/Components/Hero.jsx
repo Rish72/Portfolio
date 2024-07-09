@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import MyPhoto from "../images/Myphoto_png.png";
+import arrow from "../images/image.png";
 
 const H1 = styled.h1`
   font-family: "Anton", sans-serif;
@@ -21,7 +23,7 @@ function Hero() {
         width={900}
         style={{ filter: "drop-shadow(0 0 0.75rem #3d3d3d)" }}
         className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 drop-shadow-2xl "
-        src="src/images/Myphoto_png.png"
+        src={MyPhoto}
         alt=""
       />
 
@@ -55,7 +57,7 @@ function Hero() {
           <img
             className="rotate-[90deg]"
             width={50}
-            src="src/images/image.png"
+            src={arrow}
             alt=""
           />
         </div>
