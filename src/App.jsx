@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import "./App.css";
 import NavBar from "./Components/NavBar";
@@ -9,13 +9,17 @@ import Project from "./Components/Projects";
 import Contact from "./Components/Contact";
 
 function App() {
-  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = "Rishabh Goel";
+  },[])
+  
 
   return (
     <ReactLenis root>
       <div className="relative w-full h-screen">
         <div className="flex justify-center">
-          {/* <NavBar /> */}
+          <NavBar />
         </div>
         <Hero />
         <About />

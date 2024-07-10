@@ -41,7 +41,7 @@ function Hero() {
           Rishabh Goel<Span>.</Span>
         </H1> */}
         <marquee behavior="scroll" scrollamount="20" direction="left">
-          <H1 className=" text-[16.02vw] bg-gradient-to-r from-cyan-500 to-blue-500 my-[-10px] scale-y-125 tracking-tighter">RISHABH GOEL<Span>.</Span></H1>
+          <H1 className=" text-[16.02vw] my-[-10px] scale-y-125 tracking-tighter">RISHABH GOEL<Span>.</Span></H1>
           <H1 className="text-[16.02vw] my-[-10px] scale-y-125 tracking-tighter">RISHABH GOEL<Span>.</Span></H1>
           <H1 className="text-[16.02vw] my-[-10px] scale-y-125 tracking-tighter">RISHABH GOEL<Span>.</Span></H1>
           <H1 className="text-[16.02vw] my-[-10px] scale-y-125 tracking-tighter">RISHABH GOEL<Span>.</Span></H1>
