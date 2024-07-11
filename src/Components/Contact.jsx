@@ -11,6 +11,12 @@ const Span = styled.span`
   -webkit-text-stroke-color: #fff;
 `;
 
+const Label = styled.label`
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+`;
+
 const H5 = styled.h5`
   font-size: 0.9rem;
   color: #646464;
@@ -21,6 +27,23 @@ const H5 = styled.h5`
 const P = styled.p`
   font-size: 1rem;
 `;
+
+
+const ContactInfo = [
+  {
+    h5: "Phone",
+    data: "(+91)7906195495",
+  },
+  {
+    h5: "Email",
+    data: "(goel72.rishabh@gmail.com",
+  },
+  {
+    h5: "Address",
+    data: "Noida , Uttar Pradesh",
+  },
+];
+
 function Contact() {
   return (
     <div className="flex flex-col  w-full h-screen bg-black box-border text-white">
@@ -32,36 +55,30 @@ function Contact() {
       </h1>
 
       <div className=" flex justify-around">
-        <form className="min-h-20 p-7 flex flex-col box-border">
-          <label htmlFor="" className="my-1">
+        <form className="flex flex-col box-border">
+          <Label>
             Name
-          </label>
-          <input type="text" name="" id="" className="bg-" />
-          transparent <label htmlFor="">Email</label>
-          <input type="email" name="" id="" />
-          <label htmlFor="">Message</label>
-          <textarea name="" id=""></textarea>
+          </Label>
+          <input type="text" className="bg-transparent my-2 border-b" />
+          <Label>Email</Label>
+          <input type="email"  className="bg-transparent p-3 my-2 border-b"/>
+          <Label >Message</Label>
+          <textarea className="bg-transparent p-3 my-2 border-b w-[25vw]"></textarea>
           <button
             style={{ border: "1.5px solid white" }}
-            className="bg-transparent my-5 w-full text-white px-4 py-1 rounded-lg text-xs"
+            className="bg-transparent my-5 w-full text-white px-4 py-4 rounded-lg text-xs"
           >
             Submit
           </button>
         </form>
 
         <div className="flex flex-col gap-7">
-          <div>
-            <H5>Phone</H5>
-            <P>(+91)7906195495</P>
-          </div>
-          <div>
-            <H5>Email</H5>
-            <P>goel72.rishabh@gmail.com</P>
-          </div>
-          <div>
-            <H5>Address</H5>
-            <P>Noida , Uttar Pradesh</P>
-          </div>
+          {ContactInfo.map((info) => (
+            <div>
+              <H5>{info.h5}</H5>
+              <P>{info.data}</P>
+            </div>
+          ))}
           <div>
             <H5>Socials</H5>
             <div className="flex justify-start gap-3 ">

@@ -40,7 +40,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="bg-black relative w-full h-[100vh] border flex justify-center items-center border overflow-hidden box-border">
+    <div className="bg-black relative w-full h-[100vh] flex justify-center items-center border overflow-hidden box-border gap-20">
       <div className="flex flex-col text-white justify-center">
         <h1
           style={{ fontFamily: '"Anton", sans-serif' }}
