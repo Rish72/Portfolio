@@ -26,7 +26,7 @@ function Contact() {
     <div className="flex flex-col  w-full h-screen bg-black box-border text-white">
       <h1
         style={{ fontFamily: '"Anton", sans-serif' }}
-        className="text-[14.22vw] scale-y-125 tracking-tighter my-6 px-10"
+        className="text-[14.22vw] scale-y-125 tracking-tighter my-6 px-10 text-right"
       >
         Con<Span>tact</Span>
       </h1>
@@ -43,7 +43,7 @@ function Contact() {
           <textarea name="" id=""></textarea>
           <button
             style={{ border: "1.5px solid white" }}
-            class="bg-transparent my-5 w-full text-white px-4 py-1 rounded-lg text-xs"
+            className="bg-transparent my-5 w-full text-white px-4 py-1 rounded-lg text-xs"
           >
             Submit
           </button>
