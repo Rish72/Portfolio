@@ -54,7 +54,7 @@ function Contact() {
         Con<Span>tact</Span>
       </h1>
 
-      <div className=" flex justify-around">
+      <div className=" flex justify-around mt-[-15px]">
         <form className="flex flex-col box-border">
           <Label>
             Name
@@ -66,7 +66,7 @@ function Contact() {
           <textarea className="bg-transparent p-3 my-2 border-b w-[25vw]"></textarea>
           <button
             style={{ border: "1.5px solid white" }}
-            className="bg-transparent my-5 w-full text-white px-4 py-4 rounded-lg text-xs"
+            className="bg-transparent my-2 w-full text-white px-4 py-3 rounded-lg text-xs"
           >
             Submit
           </button>
